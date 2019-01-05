@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/listview_top_iv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/person_icon"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_gravity="center_vertical"
+        android:text="会飞的鱼"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/listview_top_iv"/>
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_gravity="center_vertical"
+        android:text="1383838438"
+        android:textSize="13sp"
+        app:layout_constraintLeft_toRightOf="@id/listview_top_iv"
+        app:layout_constraintTop_toBottomOf="@id/nameText"/>
+
+    <ImageView
+        android:id="@+id/zhima_iv"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:src="@drawable/zhima_gray"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/listview_top_iv"
+        app:layout_constraintTop_toBottomOf="@id/phoneText"/>
+
+    <ImageView
+        android:id="@+id/right_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/right"
+        android:scaleType="centerCrop"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
